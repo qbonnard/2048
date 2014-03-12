@@ -5,6 +5,16 @@
   <title>2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
+  <style>
+    .offscreen {
+      position: absolute;
+      top:1000px;
+    }
+    .hidden {
+      display: none;
+    }
+
+  </style>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -23,8 +33,12 @@
       </div>
     </div>
     <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-
-    <div class="game-container">
+ 
+    <canvas id="game-canvas" class="hidden"></canvas>
+    <canvas id='videoCanvas' class='hidden' height='480' width='640'></canvas>
+    <video id='webcam' autoplay='' class='hidden' height='480' width='640'></video>
+    <div id='threeRenderer'></div>
+    <div class="game-container offscreen" id="game-dom">
       <div class="game-message">
         <p></p>
         <div class="lower">
@@ -81,5 +95,9 @@
   <script src="js/local_score_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  <script src="js/html2canvas.js"></script>
+  <script src="js/chilitags.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/augmentation.js"></script>
 </body>
 </html>
