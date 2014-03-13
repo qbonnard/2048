@@ -8,7 +8,7 @@
   <style>
     .offscreen {
       position: absolute;
-      top:1000px;
+      top:4000px;
     }
     .hidden {
       display: none;
@@ -84,18 +84,34 @@
     </div>
 
     <p class="game-explanation">
+      <img src="2048ar.gif" alt="Video Demonstration of controlling 2048 in Augmented Reality" style="float:right"></img>
       <strong class="important">How to play:</strong>
-      Show and <strong>tilt</strong> the tag image at <a href="http://goo.gl/GWdcT2">http://goo.gl/GWdcT2</a>. More explanations on <a href="http://quentin.bonnard.eu/blog/2014/03/12/ar-2048-play-with-paper/">my blog.</a>
+      Print or show in your phone the tag image at <a href="http://goo.gl/GWdcT2">http://goo.gl/GWdcT2</a> (<a href="http://goo.gl/GWdcT2.qr" target="_blank">qr-code for the url</a>). Then tilt the tag to make the tiles slide.
+    </p>
+    <p>
+      More details on <a href="http://quentin.bonnard.eu/blog/2014/03/12/ar-2048-play-with-paper/">my blog.</a>
     </p>
     
     <hr>
     <p>
-    <a href="http://gabrielecirulli.github.io/2048/">Original game</a> by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a>
-    </p>
-    <p>
-    Augmented Reality version by <a href="http://quentin.bonnard.eu">Quentin Bonnard.</a>
+    <a href="http://gabrielecirulli.github.io/2048/">Original game</a> by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Augmented Reality version by <a href="http://quentin.bonnard.eu" target="_blank">Quentin Bonnard.</a>
     </p>
   </div>
+
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26532340-2']);
+    _gaq.push(['_setDomainName', 'bonnard.eu']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
 
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
