@@ -1,8 +1,3 @@
-var updateCanvas = function() {        
-
-
-};
-
 var camera, scene;
 var videoCamera, videoScene;
 var videoTexture;
@@ -127,11 +122,11 @@ function renderLoop() {
         else if (eulerY.y < -TILTED_THRESHOLD) orientation = 1;
         else                                   orientation = -1;
 
-        console.log(orientation+"+"+previousOrientation);
+        //console.log(orientation+"+"+previousOrientation);
         if (previousOrientation == -1 || orientation == -1) {
             previousOrientation = orientation;
             if (orientation != -1) {
-                console.log(orientation)
+                //console.log(orientation)
                 dirtyHack.emit("move", orientation);
             }
         }
